@@ -18,8 +18,7 @@ body {
     display: flex;
     flex-direction: column;
 }
- 
-/* Left panel slightly narrower */
+
 .panel-left  { flex: 0.9; }
 .panel-right { flex: 1.1; }
 
@@ -33,7 +32,7 @@ body {
 }
 
 .text-body {
-    width:80%;
+    width:90%;
     border:1px solid black;
     height:auto;
     background-color: #90DBF3;
