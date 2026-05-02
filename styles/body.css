@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+body {
+    display: flexbox;
+}
+
+.panels-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 90%;
+    margin: 24px auto;
+    align-items: flex-start;
+}
+ 
+.panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+ 
+/* Left panel slightly narrower */
+.panel-left  { flex: 0.9; }
+.panel-right { flex: 1.1; }
+
+.titling {
+    font-family: Montserrat;
+    background: #fff;
+     border: 1px solid #ddd;
+      border-radius: 4px; 
+      padding: 22px 26px; margin-bottom: 20px;
+      text-align: center;
+}
+
+.text-body {
+    width:80%;
+    border:1px solid black;
+    height:auto;
+    background-color: #90DBF3;
+    border-radius:10px;
+    align-items: left;
+    text-align: left;
+    
+    font-family: Questrial;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 1.3vw;
+
+    margin: auto;
+}
+
+.text-body > *{
+    margin-left: 1.5vw;
+}
+
+.text-heading {
+    font-weight:700;
+    font-family: Montserrat;
+}
+
+.divider-line {
+    width: 80%;
+    margin-top: 2vw;
+}
+
+.btn-register {
+    background-color: #72C1D1; 
+    color: #000;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700;
+    padding: 12px 30px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(114, 193, 209, 0.3);
+}
+
+.btn-register:hover {
+    background-color: #5baab9;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(114, 193, 209, 0.4);
+}
