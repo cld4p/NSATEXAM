@@ -5,45 +5,135 @@
 
 <head>
 
-<title>NSAT Registration</title>
+    <title>NSAT Registration</title>
 
-<link rel="stylesheet" href="styles/navbar.css">
-<link rel="stylesheet" href="styles/body.css">
-<link rel="stylesheet" href="styles/registration.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/registration.css">
 
 </head>
 
 <body>
-<header id="title-div">
-<div>   
-<h1 class="title">National Selective Assessment Test</h1>
-<h2 class="title">NSAT</h2>
-</div> 
-<img src="icons/tac.png" id="logo-container">
-</header>
-
-<hr class="divider-line">
-
-<h1 class="titling" style="text-decoration: underline;">Registration</h1>
-
-
-<form>
-    <div class="form-content" id="name">
-        <div class="f-item">
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="fname" class="input-box">
+    <header id="title-div">
+        <div>
+            <h1 class="title">National Selective Assessment Test</h1>
+            <h2 class="title">NSAT</h2>
         </div>
-        <div class="f-item">
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="lname" class="input-box">
+        <img src="icons/tac.png" id="logo-container">
+    </header>
+
+    <hr class="divider-line">
+
+    <h1 class="titling" style="text-decoration: underline;">Registration</h1>
+
+
+    <form>
+        <div class="form-content" id="name">
+            <div class="f-item">
+                <label for="fname">First Name</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input-box">
+            </div>
+            <div class="f-item">
+                <label for="lname">Last Name</label>
+                <br>
+                <input type="text" id="lname" name="lname" class="input-box">
+            </div>
         </div>
-    </div>
-    <button type="button" id="submit-btn" class="hidden-btn">Confirm Names</button>
-</form>
+
+        <hr class="form-divider-line">
+        <div class="form-content" id="dob">
+            <div class="f-item">
+                <div style="margin-bottom: 2vw;">Age: <span id="age-span"></span></div>
+                <label for="dob-input">Date Of Birth</label>
+                <br>
+                <input type="date" id="dob-input" name="dob" class="input-box">
+            </div>
+            
+        </div>
+
+        <hr class="form-divider-line">
+
+        <div class="form-content" id="gender">
+            <div class="f-item">
+                <label for="gender">Gender</label>
+                <br>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <div style="text-align: center;">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" name="gender" class="input-box" id="male" value="male">
+                    </div>
+                    <div style="text-align: center;">
+                        <label for="female">Female</label>
+                        <br>
+                        <input type="radio" name="gender" class="input-box" id="female" value="female">
+                    </div>
+                    <div style="text-align: center;">
+                        <label for="female">Third Gender</label>
+                        <br>
+                        <input type="radio" name="gender" class="input-box" id="third" value="third">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="form-divider-line">
+
+        <div class="form-content" id="p-name">
+            <div class="f-item">
+                <label for="faname">Father Name</label>
+                <br>
+                <input type="text" id="faname" name="faname" class="input-box">
+            </div>
+            <div class="f-item">
+                <label for="maname">Mother Name</label>
+                <br>
+                <input type="text" id="maname" name="maname" class="input-box">
+            </div>
+        </div>
+        </div>
+
+        <hr class="form-divider-line">
+
+        <div class="form-content" id="nationality">
+            <div class="f-item">
+                <label for="nation">Nationality</label>
+                <br>
+                <select name="nation" id="nation" class="option-box">
+                    <option value="indian">Indian Citizen</option>
+                    <option value="nri">Non-Resident Indians</option>
+                    <option value="foreign">Foreign Nationals</option>
+                </select>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <hr class="form-divider-line">
+
+        <div class="form-content" id="category">
+            <div class="f-item">
+                <label for="category">Category</label>
+                <br>
+                <select name="category" id="category" class="option-box">
+                    <option value="general">General</option>
+                    <option value="obc">OBC</option>
+                    <option value="scst">SC/ST</option>
+                    <option value="ews">EWS</option>
+                </select>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        
+
+    </form>
 
 
 
-<script src="scripts/registration.js"></script>
+    <script src="scripts/registration.js"></script>
 
 
 </body>

@@ -2,25 +2,8 @@
 
 body {
     display: flexbox;
-}
 
-.panels-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    width: 90%;
-    margin: 24px auto;
-    align-items: flex-start;
 }
- 
-.panel {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.panel-left  { flex: 0.9; }
-.panel-right { flex: 1.1; }
 
 .titling {
     font-family: Montserrat;
@@ -32,10 +15,10 @@ body {
 }
 
 .text-body {
-    width:90%;
+    width:100%;
     border:1px solid black;
     height:auto;
-    background-color: #90DBF3;
+    background-color: #dbf3fb;
     border-radius:10px;
     align-items: left;
     text-align: left;
@@ -59,7 +42,7 @@ body {
 
 .divider-line {
     width: 80%;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 
 .btn-register {
