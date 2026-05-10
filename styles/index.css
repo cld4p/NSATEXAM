@@ -16,3 +16,16 @@
 .panel-left  { flex: 0.9; }
 .panel-right { flex: 1.1; }
 
+@media (max-width: 768px) {
+    .panels-wrapper {
+        flex-direction: column;
+        width: 95%;
+        margin: 12px auto;
+        gap: 16px;
+    }
+
+    .panel-left, 
+    .panel-right {
+        flex: 1;
+    }
+}

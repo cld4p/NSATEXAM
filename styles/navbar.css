@@ -35,7 +35,6 @@ a {
     display: flex;
     justify-content:center;
     align-items: center;
-    
 }
 
 .nav-item {
@@ -100,3 +99,28 @@ a {
   user-select: none;
 }
 
+@media (max-width: 768px) {
+    #logo-container {
+        position: static;
+        width: 120px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        width: 80%;
+        height: 50px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    
+    #selected.nav-item, .nav-item:hover {
+        margin: 5px 0 !important;
+    }
+}
