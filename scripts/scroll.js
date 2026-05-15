@@ -32,9 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isAnimating) return;
 
-        textBodies.forEach(textBody => {
-            textBody.;
-        })
 
         if (e.deltaY > 0 && currentIndex < items.length - 1) {
             currentIndex++; 

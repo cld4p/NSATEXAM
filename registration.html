@@ -1,142 +1,193 @@
 <!DOCTYPE html>
-
 <html>
-
-
 <head>
-
     <title>NSAT Registration</title>
-
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/body.css">
     <link rel="stylesheet" href="styles/registration.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
     <header id="title-div">
         <div>
             <h1 class="title">National Selective Assessment Test</h1>
-            <h2 class="title">NSAT</h2>
+            <h3 class="title">Official Candidate Registration Portal</h3>
         </div>
+        <button onclick="window.location.href='home.html'" id="home">Home</button>
         <img src="icons/tac.png" id="logo-container">
     </header>
-
     <hr class="divider-line">
-
-    <h1 class="titling" style="text-decoration: underline;">Registration</h1>
-
-<div id="form-container">
-    <form>
-        <div class="form-content" id="name">
-            <div class="f-item">
-                <label for="fname">First Name</label>
-                <br>
-                <input type="text" id="fname" name="fname" class="input-box">
+    <div id="form-container">
+        <form id="reg-form">
+            <h1 class="titling" >Registration</h1>
+            <!-- PERSONAL DETAILS -->
+            <div class="section-heading">
+                <h2>Personal Details</h2>
             </div>
-            <div class="f-item">
-                <label for="lname">Last Name</label>
-                <br>
-                <input type="text" id="lname" name="lname" class="input-box">
-            </div>
-        </div>
-
-        <hr class="form-divider-line">
-        <div class="form-content" id="dob">
-            <div class="f-item">
-                <div style="margin-bottom: 2vw;">Age: <span id="age-span"></span></div>
-                <label for="dob-input">Date Of Birth</label>
-                <br>
-                <input type="date" id="dob-input" name="dob" class="input-box">
-            </div>
-            
-        </div>
-
-        <hr class="form-divider-line">
-
-        <div class="form-content" id="gender">
-            <div class="f-item">
-                <label for="gender">Gender</label>
-                <br>
-                <div style="display: flex; gap: 10px; margin-top: 10px;">
-                    <div style="text-align: center;">
-                        <label for="male">Male</label>
-                        <br>
-                        <input type="radio" name="gender" class="input-box" id="male" value="male">
-                    </div>
-                    <div style="text-align: center;">
-                        <label for="female">Female</label>
-                        <br>
-                        <input type="radio" name="gender" class="input-box" id="female" value="female">
-                    </div>
-                    <div style="text-align: center;">
-                        <label for="female">Third Gender</label>
-                        <br>
-                        <input type="radio" name="gender" class="input-box" id="third" value="third">
-                    </div>
+            <div class="form-content" id="name">
+                <div class="f-item">
+                    <label for="fname">First Name</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" class="input-box" required>
+                </div>
+                <div class="f-item">
+                    <label for="lname">Last Name</label>
+                    <br>
+                    <input type="text" id="lname" name="lname" class="input-box" required>
                 </div>
             </div>
-        </div>
-
-        <hr class="form-divider-line">
-
-        <div class="form-content" id="p-name">
-            <div class="f-item">
-                <label for="faname">Father Name</label>
-                <br>
-                <input type="text" id="faname" name="faname" class="input-box">
+            <hr class="form-divider-line">
+            <!-- DOB -->
+            <div class="form-content" id="dob">
+                <div class="f-item">
+                    <div style="margin-bottom: 1vw;">
+                        Age : <span id="age-span"></span>
+                    </div>
+                    <label for="dob-input">Date Of Birth</label>
+                    <br>
+                    <input type="date" id="dob-input" name="dob" class="input-box" required>
+                </div>
             </div>
-            <div class="f-item">
-                <label for="maname">Mother Name</label>
-                <br>
-                <input type="text" id="maname" name="maname" class="input-box">
+            <hr class="form-divider-line">
+            <!-- GENDER -->
+            <div class="form-content" id="gender">
+                <div class="f-item">
+                    <label for="gender">Gender</label>
+                    <br>
+                    <div style="display:flex; justify-content:center; align-items:center; gap:3vw; margin-top:10px;">
+                        <div style="text-align:center;">
+                            <label for="male">Male</label>
+                            <br>
+                            <input type="radio" name="gender" class="input-box" id="male" value="male" required>
+                        </div>
+                        <div style="text-align:center;">
+                            <label for="female">Female</label>
+                            <br>
+                            <input type="radio" name="gender" class="input-box" id="female" value="female" required>
+                        </div>
+                        <div style="text-align:center;">
+                            <label for="third">Other</label>
+                            <br>
+                            <input type="radio" name="gender" class="input-box" id="third" value="third" required>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <label for="fname">Address</label>
+                    <br>
+                    <input type="text" id="address" name="address" class="input-box" required>
+                </div>
             </div>
-        </div>
-
-        <hr class="form-divider-line">
-
-        <div class="form-content" id="nationality">
-            <div class="f-item">
-                <label for="nation">Nationality</label>
-                <br>
-                <select name="nation" id="nation" class="option-box">
-                    <option value="indian">Indian Citizen</option>
-                    <option value="nri">Non-Resident Indians</option>
-                    <option value="foreign">Foreign Nationals</option>
-                </select>
+            <hr class="form-divider-line">
+            <!-- PARENT DETAILS -->
+            <div class="section-heading">
+                <h2>Parent Details</h2>
             </div>
-        </div>
-
-
-        <hr class="form-divider-line">
-
-        <div class="form-content" id="category">
-            <div class="f-item">
-                <label for="category">Category</label>
-                <br>
-                <select name="category" id="category" class="option-box">
-                    <option value="general">General</option>
-                    <option value="obc">OBC</option>
-                    <option value="scst">SC/ST</option>
-                    <option value="ews">EWS</option>
-                </select>
+            <div class="form-content" id="p-name">
+                <div class="f-item">
+                    <label for="faname">Father Name</label>
+                    <br>
+                    <input type="text" id="faname" name="faname" class="input-box" required>
+                </div>
+                <div class="f-item">
+                    <label for="maname">Mother Name</label>
+                    <br>
+                    <input type="text" id="maname" name="maname" class="input-box" required>
+                </div>
             </div>
+            <hr class="form-divider-line">
+            <!-- NATIONALITY -->
+            <div class="section-heading">
+                <h2>Nationality</h2>
             </div>
-        </div>
-        </div>
-
-        
-
-    </form>
-</div>
-
-
-
+            <div class="form-content" id="nationality">
+                <div class="f-item">
+                    <br>
+                    <select name="nation" id="nation" class="option-box" required>
+                        <option value="indian">Indian Citizen</option>
+                        <option value="nri">Non-Resident Indians</option>
+                        <option value="foreign">Foreign Nationals</option>
+                    </select>
+                </div>
+            </div>
+            <hr class="form-divider-line">
+            <!-- ACADEMIC DETAILS -->
+            <div class="section-heading">
+                <h2>Academic Information</h2>
+            </div>
+            <div class="form-content" id="category">
+                <div class="f-item">
+                    <label for="category">Category</label>
+                    <br>
+                    <select name="category" id="category" class="option-box" required>
+                        <option value="general">General</option>
+                        <option value="obc">OBC</option>
+                        <option value="scst">SC/ST</option>
+                        <option value="ews">EWS</option>
+                    </select>
+                </div>
+            </div>
+            <!-- ADDITIONAL DETAILS -->
+            <div class="form-content" id="category">
+                <div class="f-item">
+                    <label for="rState">State of Residence</label>
+                    <br>
+                    <select name="rState" class="state-list" required>
+                        <option value="">Select a State</option>
+                    </select>
+                    <br><br>
+                    <label for="medium">Medium of Schooling in Qualifying Examination</label>
+                    <br>
+                    <select name="states" id="nation" class="option-box" name="medium" required>
+                        <option value="cbse">CBSE</option>
+                        <option value="icse">ICSE</option>
+                        <option value="nios">NIOS</option>
+                        <option value="ib">IB</option>
+                        <option value="state">State Board</option>
+                    </select>
+                    <br><br>
+                    <label for="aadhar">Upload Aadhar Card</label><br>
+                    <input type="file" id="aadhar" name="aadhar" required>
+                    <br><br>
+                    <label for="12cert">Upload 12th Certificate</label><br>
+                    <input type="file" id="12cert" name="12cert" required>
+                    <hr>
+                    <label for="subject">Applying for</label>
+                    <br>
+                    <select name="subject" id="nation" class="option-box" required>
+                        <option value="cp">Computing Practices</option>
+                        <option value="pl">Professional Language</option>
+                        <option value="ac">Advanced Calculus</option>
+                        <option value="stat">Statistics</option>
+                        <option value="ct">Creative Thinking</option>
+                        <option value="tp">Theoretical Physics</option>
+                    </select>
+                    <br><br>
+                    <label for="p1">Exam Center, 1st Priority</label>
+                    <br>
+                    <select name="p1" class="state-list" id="1state" required>
+                        <option value="">Select a State</option>
+                    </select>
+                    <br><br>
+                    <label for="p2">Exam Center, 2nd Priority</label>
+                    <br>
+                    <select name="p2" class="state-list" id="2state" required>
+                        <option value="">Select a State</option>
+                    </select>
+                    <br><br>
+                    <label for="p3">Exam Center, 3rd Priority</label>
+                    <br>
+                    <select name="p3" class="state-list" id="3state" required>
+                        <option value="">Select a State</option>
+                    </select>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2vw; margin-bottom: 1vw;">
+            <p id="alert-msg"></p>
+            <button type="submit" class="submit-btn" onclick="submitRegistration(event)">Submit</button>
+            </div>
+        </form>
+    </div>
     <script src="scripts/registration.js"></script>
-
-
 </body>
-
-
-
 </html>

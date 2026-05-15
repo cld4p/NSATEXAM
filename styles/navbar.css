@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 a {
     text-decoration: none;
@@ -12,14 +14,14 @@ a {
 
 .title {
     text-align: center;
-    font-family: Montserrat;
+    font-family: Playfair Display;
     font-weight: 900;
     line-height: 30px;
 }
 
 #logo-container {
     position: absolute;
-    width: 9vw;
+    width: 13vw;
     right: 20px;
     top: 0px;
     object-fit: cover;
@@ -55,7 +57,7 @@ a {
     transition: 0.4s;
 
     font-size: 1vw;
-    font-family: Questrial;
+    font-family: Roboto;
     font-weight: 500;
 }
 
